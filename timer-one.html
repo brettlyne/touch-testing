@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title></title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- TODO 
+            - think about how structure is simpler for a quick demo vs. full thing  
+            - render interval-item objects from a preset array
+            - ability to add items to timer
+            - timer renders from timer class & updates
+            - save state to local storage
+            - "add timer items below" state for pause control (if no items yet) (or disabled initial state?)
+
+            - remove timer items?
+            - touch controls?
+            - STOP button reveals when paused? 
+            - set / view reps?
+            - folders of interval timers
+            - responsive
+            
+            - music controls?
+        -->
+    </head>
+    <body>
+
+        <div id="container">
+            <div class="top-nav">
+                <div class="play-control control"><!--►-->❙<span style="font-size: 20px;"> </span>❙</div>
+                <div class="reps"></div>
+                <div class="time">00:00<br><span style="color: #666;">——</span><br>13:30</div>
+            </div>
+            <ul class="interval-items">
+            </ul>
+            <p class="add-action control"><strong>+</strong> Add an Interval</p>
+        </div>
+ 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+        <script src="js/timer.js"></script>
+        <script src="js/interval-item.js"></script>
+    </body>
+</html>
